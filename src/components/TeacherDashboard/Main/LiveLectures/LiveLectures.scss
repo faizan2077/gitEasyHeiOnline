@@ -1,0 +1,164 @@
+.liveLectures {
+  background: #f5f5fb;
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  padding: 18px 58px 85px 54px;
+  font-weight: 500;
+  display: flex;
+  flex-direction: column;
+
+  &__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 25px;
+
+    &__title {
+      color: rgba(30, 41, 89, 0.57);
+      font-size: 30px;
+      line-height: 45px;
+      font-weight: 500;
+    }
+
+    &__cta {
+      background: #8389a4;
+      box-shadow: 0px 16px 40px rgba(10, 29, 71, 0.04);
+      border-radius: 9px;
+      padding: 8px 34px 8px 36px;
+      color: #ffffff;
+      font-size: 14px;
+      line-height: 21px;
+    }
+  }
+
+  &__tabs {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 18px;
+    line-height: 27px;
+    width: 100%;
+    max-width: 296px;
+    margin-bottom: 38px;
+
+    &__link {
+      color: #1e2959;
+      cursor: pointer;
+      position: relative;
+
+      &--active {
+        color: #ff9f1c;
+        &::before {
+          content: "";
+          width: 30px;
+          height: 0;
+          bottom: 0;
+          left: 50%;
+          transform: translate(-50%, 0);
+          position: absolute;
+          border-top: 3px solid #ff9f1c;
+          border-radius: 3px;
+        }
+      }
+    }
+  }
+
+  &__searchAndAdd {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 44px;
+
+    &__search {
+      width: 485px;
+      height: 48px;
+
+      background: #ffffff;
+      box-shadow: 0px 16px 40px rgba(10, 29, 71, 0.04);
+      border-radius: 16px;
+      padding: 9px 35px;
+      position: relative;
+
+      &__input {
+        color: rgba(30, 41, 89, 0.75);
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 30px;
+        width: calc(100% - 40px);
+
+        &::placeholder {
+          color: rgba(30, 41, 89, 0.25);
+          font-weight: 500;
+          font-size: 20px;
+          line-height: 30px;
+        }
+      }
+
+      &__image {
+        position: absolute;
+        right: 0;
+        top: 50%;
+        transform: translateY(-50%);
+        margin-right: 25px;
+        cursor: pointer;
+      }
+    }
+
+    &__addQuestion {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 10px;
+
+      max-width: 200px;
+      max-height: 46px;
+      height: 100%;
+      padding: 9.5px 17px;
+      background: #ff9f1c;
+      border-radius: 9px;
+
+      &__text {
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 27px;
+        color: #ffffff;
+      }
+    }
+  }
+
+  &__dropDownRow {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 44px;
+
+    &__item {
+      background: #ffffff;
+      border: 1px solid #0a1d47;
+      box-sizing: border-box;
+      box-shadow: 0px 16px 40px rgba(10, 29, 71, 0.04);
+      border-radius: 32px;
+      cursor: pointer;
+
+      display: flex;
+      align-items: center;
+      gap: 7px;
+      padding: 5px 25px;
+
+      &__text {
+        color: #0a1d47;
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 24px;
+      }
+
+      &__image {
+        height: 7px;
+        width: 12px;
+      }
+    }
+  }
+}

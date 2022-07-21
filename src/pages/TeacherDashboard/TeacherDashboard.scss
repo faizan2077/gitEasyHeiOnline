@@ -1,0 +1,18 @@
+.teacherDashboard {
+  background: #f5f5fb;
+  min-height: 100vh;
+  display: flex;
+  position: relative;
+
+  &__sidebarWrapper {
+    display: flex;
+    flex: 0.23;
+    max-width: 332px;
+  }
+
+  &__mainWrapper {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+}

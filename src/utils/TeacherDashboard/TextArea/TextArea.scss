@@ -1,0 +1,40 @@
+.textArea {
+  display: flex;
+
+  position: relative;
+  width: calc(100% - 44px);
+  flex: 1;
+  margin-bottom: 59px;
+  align-self: center;
+
+  &__input {
+    resize: none;
+    width: 100%;
+    background: #ffffff;
+    border: 1px solid #1e2959;
+    box-shadow: 0px 16px 40px rgba(10, 29, 71, 0.04);
+    border-radius: 17px;
+    padding: 20px;
+    min-width: 108px;
+    font-size: 16px;
+    line-height: 24px;
+
+    &::placeholder {
+      color: rgba(10, 29, 71, 0.5);
+      font-weight: normal;
+      font-size: 16px;
+      line-height: 24px;
+    }
+  }
+  &::before {
+    content: attr(data-required);
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 21px;
+    color: #942314;
+
+    position: absolute;
+    top: -19px;
+    left: 0%;
+  }
+}

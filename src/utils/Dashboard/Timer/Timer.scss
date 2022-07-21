@@ -1,0 +1,14 @@
+.timer {
+  position: absolute;
+  top: -40px;
+  left: 100%;
+  transform: translateX(-100%);
+  z-index: 2;
+
+  &__display {
+    color: #1e2959;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 36px;
+  }
+}

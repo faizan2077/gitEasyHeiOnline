@@ -1,0 +1,83 @@
+.profilePopUp {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: #ffffff;
+  box-shadow: 0px 22px 40px -14px rgba(10, 29, 71, 0.11);
+  border-radius: 0px 0px 16px 16px;
+  max-width: 175px;
+  padding: 22px 41px;
+  color: #0a1d47;
+  font-weight: normal;
+  margin-left: auto;
+  margin-right: 30px;
+
+  &__profile {
+    cursor: pointer;
+
+    display: flex;
+    align-items: center;
+
+    &__photo {
+      width: 64px;
+      height: 64px;
+      border-radius: 50%;
+    }
+
+    &__downArrow {
+      margin-left: 7px;
+      transition: all 400ms ease-in-out;
+      transform: rotate(180deg);
+    }
+  }
+
+  &__name {
+    font-size: 18px;
+    line-height: 27px;
+    font-weight: normal;
+  }
+
+  &__status {
+    font-size: 13px;
+    line-height: 19px;
+    font-weight: normal;
+    margin-bottom: 19px;
+  }
+
+  &__editBtn {
+    min-width: 98px;
+    min-height: 25px;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 18px;
+    color: #ffffff;
+    background: #ff9f1c;
+    box-shadow: 0px 16px 40px rgba(10, 29, 71, 0.04);
+    border-radius: 9px;
+    margin-bottom: 12px;
+  }
+
+  &__link {
+    color: #0a1d47;
+    font-weight: normal;
+    font-size: 13px;
+    line-height: 19px;
+    margin-bottom: 12px;
+    /* identical to box height */
+  }
+  &__bar {
+    width: 110%;
+    border: 1px solid rgba(0, 0, 0, 0.15);
+    border-radius: 1px;
+    //   height: 1px;
+    margin: 4px 0 5px;
+  }
+
+  &__logOut {
+    color: #ff9f1c;
+    font-weight: normal;
+    font-size: 13px;
+    line-height: 19px;
+    position: relative;
+  }
+}

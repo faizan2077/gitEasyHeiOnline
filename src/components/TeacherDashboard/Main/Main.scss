@@ -1,0 +1,81 @@
+.mainTeacher {
+  background: #f5f5fb;
+  position: relative;
+  width: 100%;
+  min-height: 85vh;
+  padding: 18px 58px 85px 54px;
+  font-weight: 500;
+
+  &__header {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    margin-bottom: 53px;
+
+    &__title {
+      font-weight: 600;
+      font-size: 24px;
+      line-height: 36px;
+
+      color: #0a1d47;
+    }
+
+    &__subtitle {
+      font-weight: normal;
+      font-size: 18px;
+      line-height: 27px;
+
+      color: #0a1d47;
+    }
+  }
+
+  &__grid {
+    column-gap: 3.5vmax;
+    row-gap: 46px;
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    &__item {
+      background: #ffffff;
+      box-shadow: 0px 16px 40px rgba(10, 29, 71, 0.04);
+      border-radius: 16px;
+      height: 206px;
+      width: 297px;
+      cursor: pointer;
+
+      padding: 13px 29px 40px 29px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      &--active {
+        background: rgba(255, 204, 0, 0.21);
+        border-radius: 16px;
+      }
+
+      &__image {
+        align-self: center;
+        margin-bottom: 3px;
+      }
+
+      &__title {
+        color: #1e2959;
+        font-weight: 500;
+        font-size: 22px;
+        line-height: 33px;
+        margin-bottom: 6px;
+        text-align: center;
+      }
+
+      &__subtitle {
+        color: rgba(30, 41, 89, 0.57);
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 24px;
+        text-align: center;
+      }
+    }
+  }
+}

@@ -1,0 +1,144 @@
+.content {
+    display: flex;
+    justify-content: space-between;
+    width: 78vw;
+    align-items: center;
+    min-width: 85vh;
+    padding: 10px 12vw;
+}
+.content2 {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 12vw;
+    align-items: center;
+   
+}
+.complaint-box{
+    padding-top: 13px;
+}
+.center2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    width: 100%;
+
+    text-align: center;
+    padding: 2px;
+}
+
+.upload-image-logo {
+    width: 190px;
+    height: 120px;
+    text-align: center;
+    border-radius: 10px;
+    margin-top: 5px;
+    line-height: 45px;
+    border: 1px solid black;
+    background-color: #F9FFDE;
+    margin-right: .2vw;
+    overflow: hidden;
+}
+
+/* .upload-image-logo:hover {
+    background-color: rgb(175, 201, 252);
+} */
+
+.upload-image-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 10px;
+    margin-top: 20px;
+    flex-direction: column;
+}
+
+.upload-image-box h5 {
+    color: rgb(109, 109, 109);
+    text-decoration: underline;
+}
+
+.imageUploadContainer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 30px;
+}
+
+.upload-image-logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.table {
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    /* align-items: center;
+    justify-content: center; */
+    /* text-align: center; */
+}
+
+.messageAndSend {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 10px 13px;
+}
+
+.wid {
+    width: 100%;
+}
+@media only screen and (max-width: 1270px) {
+    .content {
+        display: flex;
+        flex-direction: column;
+        min-width: 45vh;
+    }
+
+    .feedback-box {
+        margin-bottom: 20px;
+        padding-top: 50px;
+    }
+}
+.feedback-box{
+    padding-top: 50px;
+}
+
+.teacherDashboard {
+    background: #f5f5fb;
+    min-height: 100vh;
+    display: flex;
+    position: relative;
+
+    &__sidebarWrapper {
+        display: flex;
+        flex: 0.23;
+        max-width: 332px;
+    }
+
+    &__mainWrapper {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+}
+.line{
+    max-width: 30px;
+    width: 30px;
+    max-height: 10px;
+    overflow-y: hidden;
+  
+  }
+  .img{
+    margin-left: 28px;
+  }
+  .h{
+    height: 100%;
+  }
+  form{
+    padding: 45px;
+  }

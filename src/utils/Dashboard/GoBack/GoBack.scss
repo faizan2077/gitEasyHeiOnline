@@ -1,0 +1,38 @@
+.goBackStudent {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-bottom: 32px;
+
+  &__icon {
+    cursor: pointer;
+    margin-bottom: 20px;
+  }
+
+  &__text {
+    color: rgba(30, 41, 89, 0.57);
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 45px;
+  }
+}
+
+@media screen and (max-width: 1068px) {
+  .goBackStudent {
+    align-items: center;
+
+    &__icon {
+      cursor: pointer;
+      display: none;
+    }
+  }
+}
+
+@media screen and (max-width: 571px) {
+  .goBackStudent {
+    &__text {
+      font-size: 18px;
+      line-height: 27px;
+    }
+  }
+}
