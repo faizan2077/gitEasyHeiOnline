@@ -1,6 +1,20 @@
-import React from 'react';
+import React, { useEffect, useState } from "react";
+import axios from "axios"
 
 const Questions = () => {
+    const [data, setdata] = useState([]);
+    console.log(data);
+
+     // /Getting Data from API---------------------------------------
+  useEffect(() => {
+    axios
+      .get("https://api.pariksha247.com/api/question/")
+      .then((res) => setdata(res.data))
+      .then((err) => console.log(err));
+      
+      
+  }, []);
+
     return (
         <div>
             <div className='row mt-4'>
@@ -44,13 +58,16 @@ const Questions = () => {
                     <h3 className='mt-5'>Review (0/30 new Questions)</h3>
 
                     <div>
-                        <p>What is the correct increasing order of excent of deprotonation acids in aqueous solution?</p>
-                        <ol style={{listStyleType:"upper-roman"}}>
-                            <li>CH2 CH2 COOH</li>
-                            <li>(CH3 CHCOOH)</li>
-                            <li>CH3 CCl2 COOH</li>
-                            <li>Cl2 CHCH2 COOH</li>
-                        </ol>
+                        {
+                        data.map((item, key)=>(
+                        <p>{key+1})  {item.question}
+                        <br/>
+                        <button className="btn btn-outline-warning">Pick</button>
+                        </p>        
+                        // <button className="btn btn-success">Pick</button>
+                        
+                        ))  }
+                        
                     </div>
 
                 </div>
